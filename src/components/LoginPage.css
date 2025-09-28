@@ -1,0 +1,70 @@
+/* src/components/LoginPage.css */
+
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 80vh; */ /* Removed fixed height */
+  flex-grow: 1; /* Allow it to grow within content-area */
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08); /* Translucent background */
+  backdrop-filter: blur(15px); /* Stronger blur for glass effect */
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  border-radius: 20px; /* More rounded corners */
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Glassmorphism shadow */
+  animation: slideIn 0.8s ease-out;
+  max-width: 500px; /* Constrain width */
+  margin: 20px;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.login-title {
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.login-subtitle {
+  font-size: 1.2em;
+  color: #eee;
+  margin-bottom: 40px;
+}
+
+.google-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #333;
+  background: rgba(255, 255, 255, 0.8); /* Slightly less translucent for contrast */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.google-login-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.google-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
